@@ -1,0 +1,138 @@
+* {
+  font-size: 16px;
+}
+
+body {
+  background-color: hsl(204, 43%, 93%);
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  min-width: 38vw;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#top-section {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+h1 {
+  margin-top: 0px;
+  font-size: 1.3rem;
+  margin-left: 30px;
+  color: hsl(179, 62%, 43%);
+}
+
+#left h1 {
+  color: white;
+}
+
+h2 {
+  margin-top: 0px;
+  font-size: 1rem;
+  margin-left: 30px;
+  color: hsl(71, 73%, 54%);
+}
+
+#left h2,
+#right h2 {
+  color: white;
+  opacity: 0.85;
+}
+
+h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 0.8rem;
+  margin-left: 30px;
+  color: hsl(218, 22%, 67%);
+}
+
+span {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 5px;
+  font-size: 0.8rem;
+  color: white;
+  opacity: 0.7;
+}
+
+#left h3 {
+  color: white;
+  opacity: 0.85;
+}
+
+h4 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 0.7rem;
+  margin-left: 30px;
+  color: white;
+  opacity: 0.7;
+}
+
+#low-section {
+  min-width: 38vw;
+  display: flex;
+}
+
+#left {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 50%;
+  background-color: hsl(179, 62%, 43%);
+}
+
+#right {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 50%;
+  background-color: hsl(179, 62%, 43%);
+  opacity: 0.8;
+}
+
+button {
+  margin-left: 30px;
+  margin-top: 30px;
+  border-radius: 5px;
+  width: 75%;
+  height: 40px;
+  background: hsl(71, 73%, 54%);
+  border: solid 2px hsl(71, 73%, 54%);
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media only screen and (max-width: 600px) {
+  #container {
+    width: 55vw;
+  }
+  #low-section {
+    width: 55vw;
+    display: flex;
+    flex-direction: column;
+  }
+  #left {
+    width: 100%;
+  }
+
+  #right {
+    width: 100%;
+  }
+}
